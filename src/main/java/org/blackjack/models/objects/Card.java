@@ -7,7 +7,9 @@ import org.blackjack.models.Nominations.Suit;
 @Getter
 public class Card {
 
+    @Getter
     private final Rank rank;
+    @Getter
     private final Suit suit;
 
     public Card(Rank rank, Suit suit) {
