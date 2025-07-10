@@ -35,7 +35,7 @@ public class Deck {
         Collections.shuffle(cards);
     }
 
-    private Card removeCard() {
+    public Card removeCard() {
         if (currentCardCount > 0) {
             currentCardCount--;
             return cards.removeFirst();
