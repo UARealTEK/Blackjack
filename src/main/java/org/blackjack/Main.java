@@ -1,9 +1,10 @@
 package org.blackjack;
 
-import org.blackjack.services.Game;
+import org.blackjack.services.GameLoop;
 
 public class Main {
     public static void main(String[] args) {
-        new Game().StartGame();
+        GameLoop game = new GameLoop();
+        game.gameLoop();
     }
 }

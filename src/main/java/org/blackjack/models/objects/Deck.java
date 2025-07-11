@@ -42,4 +42,8 @@ public class Deck {
         } else throw new IllegalStateException("No cards left in the deck!");
     }
 
+    public boolean isDeckEmpty() {
+        return currentCardCount == 0;
+    }
+
 }

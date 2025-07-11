@@ -1,7 +1,5 @@
 package org.blackjack.models.Nominations;
 
-import lombok.Getter;
-
 public enum PlayerActions {
 
     DRAW(0),

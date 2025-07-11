@@ -7,12 +7,9 @@ public abstract class Participant {
 
     @Getter
     private Hand hand;
-    @Getter
-    private int currentPointsAmount;
 
-    public Participant(Hand hand, int currentPointsAmount) {
+    public Participant(Hand hand) {
         this.hand = hand;
-        this.currentPointsAmount = currentPointsAmount;
     }
 
 }

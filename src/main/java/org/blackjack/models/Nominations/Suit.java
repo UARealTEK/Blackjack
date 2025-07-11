@@ -16,7 +16,4 @@ public enum Suit {
         this.suit = suit;
     }
 
-    public String getSuit() {
-        return suit;
-    }
 }

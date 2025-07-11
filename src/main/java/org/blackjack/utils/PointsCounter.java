@@ -1,11 +1,10 @@
 package org.blackjack.utils;
 
-import org.blackjack.models.objects.Card;
-import org.blackjack.models.objects.Hand;
+import org.blackjack.models.participants.Participant;
 
 public class PointsCounter {
 
-    public static int getCurrentAmountOfPoints(Hand hand) {
-        return hand.getCards().stream().mapToInt(card -> card.getRank().getRank()).sum();
+    public static <T extends Participant> int getPlayerPoints(T participant) {
+        return participant.getHand().cards().stream().mapToInt(card -> card.rank().getRank()).sum();
     }
 }
